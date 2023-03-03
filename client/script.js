@@ -90,5 +90,10 @@ const handleSubmit = async (e) => {
 
     loader(messageDiv);
     }
-
-    
+    //use enter to submit 
+    form.addEventListener('submit', handleSubmit);
+    form.addEventListener('keyup', (e) => {
+        if(e.keyCode === 13) {
+            handleSubmit(e)
+        }
+    })
