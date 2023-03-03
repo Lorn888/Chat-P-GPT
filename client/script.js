@@ -47,7 +47,7 @@ function generateUniqueId() {
 
 // Checks if Ai is speaking or me and acts accordigly
 
-function chatStrip (isAi, value, uniqueId) {
+function chatStripe (isAi, value, uniqueId) {
     return (
         //template string:
         `
@@ -77,12 +77,12 @@ const handleSubmit = async (e) => {
     //users chatstripe
     chatContainer.innerHTML += chatStripe(false, data.get('prompt'))
 
-    form.reset()
+    form.reset();
 
     //bot chatstripe
 
     const uniqueId = generateUniqueId();
-    chatContainer.innerHTML =+ chatStripe(true, ' ', uniqueId);
+    chatContainer.innerHTML += chatStripe(true, ' ', uniqueId);
 
     chatContainer.scrollTop = chatContainer.scrollHeight;
 
@@ -90,7 +90,7 @@ const handleSubmit = async (e) => {
 
     loader(messageDiv);
     }
-    //use enter to submit 
+    //use enter to submit
     form.addEventListener('submit', handleSubmit);
     form.addEventListener('keyup', (e) => {
         if(e.keyCode === 13) {
