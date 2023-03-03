@@ -19,6 +19,7 @@ function loader(element) {
         }
     }, 300)
 }
+
 // Function that allows the text to appear one letter at a time
 
 function typeText(element, text) {
@@ -33,6 +34,7 @@ function typeText(element, text) {
         }
     }, 20)
 }
+
 // Generating unique id for every message so I can map over them later
 
 function generateUniqueId() {
@@ -41,4 +43,26 @@ function generateUniqueId() {
     const hexadecimalString = randomNumber.toString(16);
 
     return `id-${timestamp} - ${hexadecimalString}`;
+}
+
+// Checks if Ai is speaking or me and acts accordigly
+
+function chatStrip (isAi, value, uniqueId) {
+    return (
+        //template string:
+        `
+        <div class= 'wrapper ${isAi && 'ai'}'>
+            <div class= 'chat'>
+                <div class= 'profile'>
+                    <img
+                        src= '${isAi ? bot : user}'
+                        alt= '${isAi ? 'bot' : 'user'}'
+                    />
+                </div>
+                <div class= 'message' id= ${uniqueId}>${value}></div>
+            </div>
+        </div>
+
+        `
+    )
 }
