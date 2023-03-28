@@ -23,3 +23,5 @@ The potential applications of AI are endless, which is why it is rapidly gaining
 In this project, I utilized a loader animation of three dots to indicate that the AI is processing the request. This provides feedback to the user and enhances the user experience by giving the impression that the application is working on the user's request. Additionally, I implemented a feature where the response is generated gradually letter by letter, similar to how it works in the ChatGPT application. This creates a more natural conversation flow and makes the user feel like they are chatting with a real person, enhancing the overall user experience.
 
 To further improve the user experience, I also included a cat GIF as a fun and playful element in the application. This helps to create a friendly and welcoming atmosphere that encourages users to engage with the application. By incorporating these elements into the project, I was able to create an application that is both functional and enjoyable to use.
+
+You can access my deplyed app at https://chat-p.onrender.com
