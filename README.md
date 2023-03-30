@@ -9,5 +9,5 @@ npm create vite@latest client --template vanilla
 ## 2. Installed all the necessery packages in client folder
 
 ```
-npm i
+npm i?
 ```
