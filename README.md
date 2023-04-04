@@ -25,4 +25,4 @@ In this project, I utilized a loader animation of three dots to indicate that th
 
 To further improve the user experience, I also included a cat GIF as a fun and playful element in the application. This helps to create a friendly and welcoming atmosphere that encourages users to engage with the application. By incorporating these elements into the project, I was able to create an application that is both functional and enjoyable to use.
 
-You can access my deplyed app at https://chat-p.onrender.com
+You can access my deplyed app at   https://chat-p.onrender.com
